@@ -9,3 +9,12 @@ setup(
   cmdclass = {'build_ext': build_ext},
   ext_modules = ext_modules
 )
+
+
+ext_modules = [Extension("receiver", ["receiver.pyx"])]
+
+setup(
+  name = 'receiver',
+  cmdclass = {'build_ext': build_ext},
+  ext_modules = ext_modules
+)
